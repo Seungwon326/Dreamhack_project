@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Post Delete</h2>
+  <form action="/posts/{{ post[0] }}/delete" method="post">
+    <button>Yes, Delete It</button>
+  </form>
+  <form action="/posts/{{ post[0] }}">
+    <button>Cancel</button>
+  </form>
+{% endblock %}

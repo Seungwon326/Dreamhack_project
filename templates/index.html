@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Hello, {{ username }}!</h1>
+  <form action="/posts">
+    <button>Go to Posts</button>
+  </form>
+  <br>
+  <form action="/logout">
+    <button>Log Out</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>New Post</h2>
+  <form action="/posts/new" method="post">
+    Title:
+    <br>
+    <input type="text" id="title" name="title">
+    <br>
+    <br>
+    Content:
+    <br>
+    <textarea type="text" id="content" name="content"></textarea>
+    <br>
+    <button type="submit">Post</button>
+  </form>
+  <br>
+  <form action="/posts">
+    <button>Go to Posts</button>
+  </form>
+{% endblock %}
